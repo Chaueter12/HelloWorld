@@ -1,0 +1,134 @@
+'Author: Chance Haueter
+'Date: February 8, 2014
+'Class: Cmpsc 204
+'Assignment: Draw a Kid House
+
+Turtle.Speed = 10
+
+GraphicsWindow.Height = 800
+GraphicsWindow.Width = 700
+
+intHeight = GraphicsWindow.Height/2
+intWidth = GraphicsWindow.Width/2
+
+Turtle.X = intWidth
+Turtle.Y = intHeight
+
+GraphicsWindow.PenColor = GraphicsWindow.GetRandomColor()
+
+'Gets to top of triangle
+Turtle.PenUp()
+Turtle.Move(192.992915)
+Turtle.PenDown()
+
+'Draws top triangle of house
+Turtle.Turn(130)
+Turtle.Move(300.243677)
+Turtle.Turn(140)
+Turtle.Move(460)
+Turtle.Turn(140)
+Turtle.Move(300.243677)
+
+'Draws bottom square
+Turtle.PenUp()
+Turtle.Turn(130)
+Turtle.Move(192.992915)
+Turtle.TurnRight()
+Turtle.Move(200)
+Turtle.TurnLeft()
+Turtle.PenDown()
+Turtle.Move(250)
+Turtle.TurnLeft()
+Turtle.Move(400)
+Turtle.TurnLeft()
+Turtle.Move(250)
+
+'Draws horizon line
+Turtle.Move(-200)
+Turtle.TurnRight()
+Turtle.Move(150)
+Turtle.PenUp()
+Turtle.Move(-550)
+Turtle.PenDown()
+Turtle.Move(-150)
+
+'Draws the door
+Turtle.Move(150)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(175)
+Turtle.TurnLeft()
+Turtle.Move(100)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(100)
+
+'Draws door knob
+GraphicsWindow.DrawEllipse(362.5,600,5,5)
+
+'Draws windows
+Turtle.TurnLeft()
+Turtle.Move(175)
+Turtle.TurnLeft()
+Turtle.Move(150)
+Turtle.TurnLeft()
+Turtle.PenUp()
+Turtle.Move(87.5)
+Turtle.PenDown()
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(25)
+Turtle.TurnRight()
+Turtle.Move(25)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(25)
+Turtle.TurnLeft()
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.PenUp()
+
+Turtle.Move(175)
+Turtle.PenDown()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(25)
+Turtle.TurnRight()
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Move(25)
+Turtle.TurnRight()
+Turtle.Move(25)
+Turtle.TurnRight()
+Turtle.Move(50)
+
+'Draws chimney
+Turtle.PenUp()
+Turtle.TurnRight()
+Turtle.Move(75)
+Turtle.TurnRight()
+Turtle.Move(275)
+Turtle.TurnLeft()
+Turtle.Move(77.6167)
+Turtle.PenDown()
+Turtle.Move(100)
+Turtle.TurnLeft()
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(58.0451)
